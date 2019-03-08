@@ -1,12 +1,13 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
+import '../../style/header.scss'
 
 function Header(){
     return (
         <header>
-            <h1>TODO LIST</h1>
-            <Link to="/">Home</Link> |
-            <Link to="/about">About</Link>
+            <div>
+                <div className="logo">TODO</div>
+                <div>Search</div>
+            </div>
         </header>
     )
 }

@@ -1,16 +1,14 @@
 import React, {Component} from 'react'
 import TodoItem from './TodoItem'
+import ContentEditable from 'react-contenteditable'
 
 class Todos extends Component{
     render(){
-        return this.props.task.map((task) => (
-            <TodoItem
-                key={task.id}
-                task={task}
-                toggleComplete={this.props.toggleComplete}
-                delTask={this.props.delTask}
-            />
-        ));
+        return <div>
+
+            {console.log(this.props.location.state.task)}
+
+        </div>
     }
 }
 
